@@ -1,6 +1,6 @@
-function solve(value){
+function solve(input_value){
     
-    value = Number(value)
+    value = Number(input_value[0])
     
     let bonusScore = Number (0)
    
@@ -25,4 +25,7 @@ function solve(value){
     console.log(`${bonusScore}`)
     console.log(`${scoreSum}`)
 }
-solve("15875")
+// solve(["20"])
+// solve(["175"])
+// solve(["2703"])
+// solve(["15875"])

@@ -1,5 +1,5 @@
-function solve(speedIs){
-    speedIs = Number (speedIs)
+function solve(input_value){
+    speedIs = Number (input_value[0])
     if (speedIs <= 10){
         console.log("slow")
     }
@@ -16,4 +16,8 @@ function solve(speedIs){
         console.log("extremely fast")
     }
 }
-solve("3500")
+// solve(["8"])
+// solve(["49.5"])
+// solve(["126"])
+// solve(["160"])
+// solve(["3500"])

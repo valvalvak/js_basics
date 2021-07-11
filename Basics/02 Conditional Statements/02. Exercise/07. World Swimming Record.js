@@ -1,22 +1,22 @@
-function solve(worldRecordInSeconds, distanceInMeters, secondsPerMeter){
-    
-    worldRecordInSeconds = Number (worldRecordInSeconds)
-    distanceInMeters = Number (distanceInMeters)
-    secondsPerMeter = Number (secondsPerMeter)
+//worldRecordInSeconds, distanceInMeters, secondsPerMeter
+function solve(input_values) {
+  worldRecordInSeconds = Number(input_values[0]);
+  distanceInMeters = Number(input_values[1]);
+  secondsPerMeter = Number(input_values[2]);
 
-    swimmerProgress = distanceInMeters * secondsPerMeter
-    slowdown = Math.floor(distanceInMeters / 15) * 12.5
+  swimmerProgress = distanceInMeters * secondsPerMeter;
+  slowdown = Math.floor(distanceInMeters / 15) * 12.5;
 
-    achievment = (swimmerProgress+slowdown).toFixed(2)
-    difference = (Math.abs(worldRecordInSeconds-achievment)).toFixed(2)
+  achievement = (swimmerProgress + slowdown).toFixed(2);
+  difference = Math.abs(worldRecordInSeconds - achievement).toFixed(2);
 
-    if (worldRecordInSeconds>achievment){
-        console.log(`Yes, he succeeded! The new world record is ${achievment} seconds.`)
-    }
-    else{
-        console.log(`No, he failed! He was ${difference} seconds slower.`)
-    }
+  if (worldRecordInSeconds > achievement) {
+    console.log(
+      `Yes, he succeeded! The new world record is ${achievement} seconds.`
+    );
+  } else {
+    console.log(`No, he failed! He was ${difference} seconds slower.`);
+  }
 }
-solve("55555.67",
-"3017",
-"5.03")
+// solve(["10464", "1500", "20"]);
+// solve(["55555.67", "3017", "5.03"]);
