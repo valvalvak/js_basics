@@ -1,12 +1,13 @@
-function solve(firstNumber, secondNumber){
-    firstNumber = Number (firstNumber)
-    secondNumber = Number (secondNumber)
+// firstNumber, secondNumber
+
+function solve(input){
+    firstNumber = Number (input[0])
+    secondNumber = Number (input[1])
     if (firstNumber > secondNumber){
         console.log (firstNumber)
-    }
-    else{
+    }else{
         console.log (secondNumber)
     }
 
 }
-solve("-5", "5")
+// solve(["-5", "5"])

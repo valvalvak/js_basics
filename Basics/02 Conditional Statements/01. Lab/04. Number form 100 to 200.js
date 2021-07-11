@@ -1,5 +1,5 @@
-function solve(inputNumber){
-    inputNumber = Number (inputNumber)
+function solve(input){
+    inputNumber = Number (input[0])
     if (inputNumber < 100){
         console.log("Less than 100")
     }
@@ -10,4 +10,4 @@ function solve(inputNumber){
         console.log("Greater than 200")
     }
 }
-solve("90")
+// solve("90")

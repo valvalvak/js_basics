@@ -1,4 +1,5 @@
-function solve(inputPassword){
+function solve(input){
+    inputPassword = input[0]
     if (inputPassword == "s3cr3t!P@ssw0rd"){
         console.log("Welcome")
     }
@@ -6,4 +7,4 @@ function solve(inputPassword){
         console.log("Wrong password!")
     }
 }
-solve("s3cr3t!P@ssw0rd")
+solve(["s3cr3t!P@ssw0rd"])
