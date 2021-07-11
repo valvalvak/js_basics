@@ -19,22 +19,29 @@
 // Изход
 // Да се отпечата на конзолата едно число:
 // •	парите, които са събрани.
+// campaignDays, cookers, cakes, waffles, pancake
 
-function solve(campaignDays, cookers, cakes, waffles, pancake){
-    campaignDays = Number(campaignDays)
-    cookers = Number(cookers)
-    cakes = Number(cakes) * 45
-    waffles = Number(waffles) * 5.80
-    pancake = Number(pancake) * 3.20
+function solve(input){
+    campaignDays = Number(input[0])
+    cookers = Number(input[1])
+    cakes = Number(input[2]) * 45
+    waffles = Number(input[3]) * 5.80
+    pancake = Number(input[4]) * 3.20
 
     let productionSum = campaignDays * cookers * (cakes + waffles + pancake)
     let charityExpenses = productionSum / 8
     let totalSum = productionSum - charityExpenses
     console.log(`${totalSum}`)
 }
-solve("131",
+solve(["23",
+"8",
+"14",
+"30",
+"16"])
+
+solve(["131",
 "5",
 "9",
 "33",
-"46")
+"46"])
 
