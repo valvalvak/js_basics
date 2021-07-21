@@ -11,7 +11,7 @@ function solve(values_input) {
     "Sunday",
   ];
 
-  if (typeof daysOfWeek[given_number] !== 'undefined') {
+  if (typeof daysOfWeek[given_number] !== "undefined") {
     console.log(`${daysOfWeek[given_number]}`);
   } else {
     console.log(`Error`);
